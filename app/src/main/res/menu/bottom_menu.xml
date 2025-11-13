@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add"
+        android:title="Add"
+        android:icon="@drawable/add_ic" />
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_ic" />
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/search_ic" />
+
+</menu>

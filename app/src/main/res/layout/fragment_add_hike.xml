@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AddHikeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/lable_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/border_input"
+            android:ems="10"
+            android:hint="Son Dong"
+            android:inputType="text"
+            android:keyboardNavigationCluster="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#AFAFAF"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/lable_2"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_input"
+            android:ems="10"
+            android:hint="Quang Binh"
+            android:inputType="text"
+            android:keyboardNavigationCluster="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#AFAFAF"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/lable_3"
+            app:layout_constraintStart_toStartOf="@+id/location"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/border_input"
+            android:ems="10"
+            android:hint="14/08/2022"
+            android:inputType="text"
+            android:keyboardNavigationCluster="false"
+            android:focusable="false"
+            android:focusedByDefault="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#AFAFAF"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/dateButton" />
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            style="?android:spinnerStyle"
+            android:onClick="onOpenDatePicker"
+            android:keyboardNavigationCluster="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/location"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/lable_4"
+            app:layout_constraintStart_toStartOf="@+id/date"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:keyboardNavigationCluster="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="@+id/date"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6">
+
+            <RadioButton
+                android:id="@+id/radioButton_yes"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/radioButton_no"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/lable_5"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/length"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/border_input"
+            android:ems="10"
+            android:hint="100"
+            android:inputType="text"
+            android:keyboardNavigationCluster="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#AFAFAF"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="@+id/date"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/lable_6"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/level"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/border_input"
+            android:ems="10"
+            android:inputType="text"
+            android:keyboardNavigationCluster="false"
+            android:focusable="false"
+            android:focusedByDefault="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#AFAFAF"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="@+id/length"
+            app:layout_constraintStart_toStartOf="@+id/length"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <Spinner
+            android:id="@+id/levelSpinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:keyboardNavigationCluster="true"
+            app:layout_constraintBottom_toBottomOf="@+id/level"
+            app:layout_constraintEnd_toEndOf="@+id/level"
+            app:layout_constraintStart_toStartOf="@+id/level"
+            app:layout_constraintTop_toTopOf="@+id/level" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/lable_7"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_input"
+            android:ems="10"
+            android:hint="@string/description_about_the_hike"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:lines="20"
+            android:minLines="5"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:keyboardNavigationCluster="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#AFAFAF"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/date"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/add_button"
+            android:keyboardNavigationCluster="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/description"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/description"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

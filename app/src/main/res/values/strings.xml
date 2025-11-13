@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Hike Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new_hike">Add new hike</string>
+    <string name="lable_1">Name of the hike:</string>
+    <string name="lable_2">Location:</string>
+    <string name="lable_3">Date of the hike:</string>
+    <string name="lable_4">Parking available:</string>
+    <string name="lable_5">Length of the hike:</string>
+    <string name="lable_6">Difficulty level:</string>
+    <string name="lable_7">Description:</string>
+    <string name="add_button">ADD</string>
+    <string name="home_title">Home</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete">Delete</string>
+    <string name="more">More</string>
+    <string name="edit_hike">Edit Hike</string>
+    <string name="save_button">Save edit</string>
+    <string name="edit">Edit</string>
+    <string name="new_observation">New observation</string>
+    <string name="observation">Observation:</string>
+    <string name="time_of_observation">Time of observation:</string>
+    <string name="comment">Comment</string>
+    <string name="add_observation">Add</string>
+    <string name="edit_observation">Edit</string>
+    <string name="search_here">Search here</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="nameHike">Name</string>
+    <string name="description_about_the_hike">Description about the hike</string>
+    <string name="edit_hike_label">Edit hike</string>
+    <string name="title_activity_edit_hike">EditHikeActivity</string>
+    <string name="open_observation">Open Observation</string>
+    <string name="bird">Bird</string>
+    <string name="phoenix">Phoenix</string>
+    <string name="search">Search</string>
+    <string name="result">"Result: "</string>
+
+
+</resources>
